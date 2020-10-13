@@ -13,9 +13,9 @@
       <li v-for="todos in todos">
             <span>{{ todos.title }}</span>
            <button @click="del(index)">Remove</button>
-
       </li>
     </ul>
+
   </div>
 </template>
 
