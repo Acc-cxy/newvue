@@ -1,5 +1,5 @@
 <template>
-<!--  <HelloWorld msg="Hello Vue 3.0 + Vite" />-->
+  <HelloWorld msg="Hello Vue 3.0 + Vite" />
 <!--  <HoMe></HoMe>-->
   <SeTip></SeTip>
 </template>

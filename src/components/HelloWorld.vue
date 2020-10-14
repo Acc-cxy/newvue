@@ -6,6 +6,9 @@
     <button @click="counter += 1">Add 1</button>
     <p>The button above has been clicked {{ counter }} times.</p>
   </div>
+  <comp></comp>
+
+
 </template>
 
 <script>
