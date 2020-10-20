@@ -5,6 +5,11 @@ import CanvasApp from "./CanvasApp.vue";
 
 createApp(App)
     .component("comp",{render: () =>h("div", "i am comp")})
+    .directive('highlight',{
+        beforeMount(el,binding,vnode){
+            el.style.background = binding.value
+        }
+    })
     .mount('#app');
 
 const nodeOps = {

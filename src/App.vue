@@ -1,14 +1,23 @@
 <template>
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <img src="./assets/logo.png" alt="">
+<!--  <HelloWorld msg="Hello Vue 3.0 + Vite" />-->
+  <!--  数据传输-->
 <!--  <HoMe></HoMe>-->
-  <SeTip></SeTip>
+
+<!--  <SeTip></SeTip>-->
+
+<!--  <mitttest></mitttest>-->
+
+<!--  demo-->
+  <todos></todos>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import HoMe from "./components/HoMe.vue";
 import SeTip from "./components/SeTip.vue";
-import apitest from "./components/apitest.vue";
+import mitttest from "./components/mitttest.vue";
+import todos from "./components/todos.vue";
 
 
 export default {
@@ -17,7 +26,8 @@ export default {
     HelloWorld,
     HoMe,
     SeTip,
-    apitest
+    mitttest,
+    todos
   }
 }
 </script>

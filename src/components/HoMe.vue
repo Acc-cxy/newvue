@@ -6,8 +6,7 @@
           v-model="newTodoText"
           id="new-todo"
           placeholder="E.g. Feed the cat"
-      />
-      <button>Add</button>
+      /><button>Add</button>
     </form>
     <ul>
       <li v-for="todos in todos">
@@ -15,7 +14,6 @@
            <button @click="del(index)">Remove</button>
       </li>
     </ul>
-
   </div>
 </template>
 
@@ -44,7 +42,6 @@ export default {
   },
   methods: {
     addNewTodo() {
-
       console.log(this.newTodoText);
       this.todos.push({
         id: this.nextTodoId++,

@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eac07a2a-bc9d-400a-b9a2-a7b8af7215c5" name="默认的" comment="">
+    <list default="true" id="eac07a2a-bc9d-400a-b9a2-a7b8af7215c5" name="默认的" comment="1.15kk">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HoMe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HoMe.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SeTip.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SeTip.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/apitest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mitttest.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -25,6 +48,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iqqepDRu37MqAtaPXq2nzP9OKj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vuejs资料和代码/Dayten/superwu" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,6 +64,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,17 +76,72 @@
       <option name="presentableId" value="Default" />
       <updated>1602645567952</updated>
       <workItem from="1602645569051" duration="2475000" />
-      <workItem from="1602655587600" duration="11806000" />
+      <workItem from="1602655587600" duration="12318000" />
+      <workItem from="1602725095102" duration="5713000" />
+      <workItem from="1602756760849" duration="1161000" />
+      <workItem from="1602758546365" duration="724000" />
+      <workItem from="1602829601454" duration="600000" />
+      <workItem from="1603087296139" duration="93000" />
+      <workItem from="1603103763706" duration="1352000" />
+      <workItem from="1603162573719" duration="10142000" />
+      <workItem from="1603180260593" duration="6629000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.15kk" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.15kk" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1602655763099">
+    <state x="594" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603180413618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602655763099" />
+    <state x="594" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603180413618" />
+    <state x="567" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603180052099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603180052099" />
+    <state x="920" y="316" key="FileChooserDialogImpl" timestamp="1603087387159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="920" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603087387159" />
+    <state x="641" y="219" key="SettingsEditor" timestamp="1602728201367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="641" y="219" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602728201367" />
+    <state x="732" y="308" key="Vcs.Push.Dialog.v2" timestamp="1602728337665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602728337665" />
+    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1603185315390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603185315390" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/SeTip.vue</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

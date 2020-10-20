@@ -1,13 +1,10 @@
 <template>
   <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
-  <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
   <div id="basic-event">
-    <button @click="counter += 1">Add 1</button>
+    <button @click="counter += 1">Add 1={{counter}}</button>
     <p>The button above has been clicked {{ counter }} times.</p>
   </div>
   <comp></comp>
-
 
 </template>
 
