@@ -17,6 +17,7 @@
         <!--       绑定完成待办 -->
         <div class="view">
           <input type="checkbox" v-model="item.completedyesno">
+          <span>{{item.id}}</span>
           <label @click="editTodo(item)">{{item.title}}</label>
           <button @click="removeitem(item)">删除</button>
         </div>
@@ -26,6 +27,7 @@
             type="text"
             class="edit"
             v-model="item.title"
+            v-todo-focus="item === editedTodo"
             @blur="doneEdit(item)"
             @keyup.enter="doneEdit(item)"
             @keyup.escape="cancelEdit(item)"
@@ -90,6 +92,13 @@ export default {
       cancelEdit,
       doneEdit
     }
+  },
+  directives:{
+    "todo-focus":(el,{ value })=>{
+      if (value){
+        el.focus();
+      }
+    }
   }
 }
 </script>
@@ -105,6 +114,9 @@ export default {
       width: 100%;
     }
   }
+  .opens ul li{
+    float: left;
+  }
   .opens ul li input{
     margin-right: 10px;
   }
@@ -117,11 +129,8 @@ export default {
     text-decoration: line-through;
   }
 
+  .edit,
   .editing .view{
-    display: none;
-  }
-
-  .edit{
     display: none;
   }
 
