@@ -10,7 +10,7 @@
       autocomplete="off"
     >
     <ul>
-      <li v-for="item in todos"
+      <li v-for="item in filterdTodos"
           :key="item.id"
           :class="{completed:item.completedyesno,editing:item == editedTodo }"
       >
@@ -34,11 +34,37 @@
         >
       </li>
     </ul>
+    <p class="filters">
+      <span
+        @click="visibility = 'all'"
+        :class="{selected:visibility === 'all'}"
+      >All</span>
+      <span
+          @click="visibility = 'fire'"
+          :class="{selected:visibility === 'fire'}"
+      >Acitive</span>
+      <span
+          @click="visibility = 'completed'"
+          :class="{selected:visibility === 'completed'}"
+      >Competed</span>
+    </p>
   </div>
 </template>
 
 <script>
-import { reactive, toRefs} from "vue";
+import { reactive, toRefs ,computed} from "vue";
+
+const filters = {
+  all(todos){
+    return todos
+  },
+    fire(todos){
+  return todos.filter(item => !item.completedyesno)
+},
+  completed(todos){
+    return todos.filter(item => item.completedyesno )
+  }
+}
 
 export default {
   setup() {
@@ -48,10 +74,23 @@ export default {
         {
           id:1,
           title:'vue3学习'
+        },
+        {
+          id:2,
+          title:'案例测试'
+        },
+        {
+          id:3,
+          title: 'setup方法'
         }
       ],
-      beforeEditCache:'',
-      editedTodo:null
+      beforeEditCache:'', //缓存前的编辑
+      editedTodo:null, //正在编辑的todo
+      visibility:'all',
+      filterdTodos:computed(() =>{
+        return filters[state.visibility](state.todos)
+      })
+
     })
 
     function addTodo(){
@@ -60,7 +99,7 @@ export default {
         title: state.newTodo,
         completed:false
       })
-      state.newTodo=''
+      state.newTodo='';
     }
 
     function removeitem(item){
@@ -69,7 +108,6 @@ export default {
     }
 
     function editTodo(item){
-      console.log('sfs')
       state.beforeEditCache = item.title
       state.editedTodo = item
 
@@ -116,18 +154,30 @@ export default {
   }
   .opens ul li{
     float: left;
+    width: 100%;
   }
   .opens ul li input{
-    margin-right: 10px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .opens ul li span{
+    float: left;
   }
 
   .opens ul li label{
     margin: 0 20px;
   }
 
+  .opens ul li button{
+    float: right;
+  }
+
   .completed label{
     text-decoration: line-through;
   }
+
+
 
   .edit,
   .editing .view{
@@ -136,5 +186,19 @@ export default {
 
   .editing .edit{
     display: block;
+  }
+
+  p.filters{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+
+  .filters > span{
+    margin: 0 20px;
+    border: 1px solid transparent;
+  }
+  .filters > span.selected{
+    border-color: violet;
   }
 </style>
