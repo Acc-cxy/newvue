@@ -62,11 +62,11 @@ const filters = {
   all(todos){
     return todos
   },
-    fire(todos){
-  return todos.filter(item => !item.completedyesno)
+  fire(todos){
+  return todos.filter(item => item.completedyesno)
 },
   completed(todos){
-    return todos.filter(item => item.completedyesno )
+    return todos.filter(item => !item.completedyesno )
   }
 }
 

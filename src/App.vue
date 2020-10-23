@@ -1,5 +1,7 @@
 <template>
   <img src="./assets/logo.png"  alt="">
+
+  <p @click="$store.commit('add')">vuex{{$store.state.count}}</p>
 <!--  <HelloWorld msg="Hello Vue 3.0 + Vite" />-->
   <!--  数据传输-->
 <!--  <HoMe></HoMe>-->
@@ -11,14 +13,16 @@
 <!--  demo-->
 <!--  <todos></todos>-->
 
+<router-link to="/todos">
+    <span @dblclick="navigate">xxx</span>
+</router-link>
+
 <composition-api></composition-api>
 
 <!--  router启动-->
  <!-- <router-view></router-view> -->
 	<router-view v-slot="{Component}">
-      <keep-alive>
           <component :is="Component"></component>
-      </keep-alive>
   </router-view>
   
   
@@ -44,7 +48,7 @@ export default {
     mitttest,
     todos,
     index,
-	CompositionApi
+	  CompositionApi
   }
 }
 </script>

@@ -1,5 +1,6 @@
 import { createApp , createRenderer,h } from 'vue'
 import App from './App.vue'
+import store from "./store";
 import './index.css'
 import CanvasApp from "./CanvasApp.vue";
 import {createRouter, createWebHashHistory, createWebHistory} from "vue-router";
@@ -40,6 +41,7 @@ router.addRoute('about',{
 
 createApp(App)
     .use(router)
+    .use(store)
     .component("comp",{render: () =>h("div", "i am comp")})
     .directive('highlight',{
         beforeMount(el,binding,vnode){

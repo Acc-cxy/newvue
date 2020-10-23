@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eac07a2a-bc9d-400a-b9a2-a7b8af7215c5" name="默认的" comment="1.15kk">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SeTip.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SeTip.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/btnteleport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/btnteleport.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todos.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
@@ -38,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -94,7 +91,7 @@
       <workItem from="1603333570084" duration="2860000" />
       <workItem from="1603356649267" duration="631000" />
       <workItem from="1603360268375" duration="767000" />
-      <workItem from="1603423834560" duration="3095000" />
+      <workItem from="1603423834560" duration="7205000" />
     </task>
     <task id="LOCAL-00001" summary="1.15kk">
       <created>1603247237265</created>
