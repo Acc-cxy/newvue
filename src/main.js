@@ -2,8 +2,44 @@ import { createApp , createRenderer,h } from 'vue'
 import App from './App.vue'
 import './index.css'
 import CanvasApp from "./CanvasApp.vue";
+import {createRouter, createWebHashHistory, createWebHistory} from "vue-router";
+import todos from "./components/todos.vue";
+import index from "./components/index.vue";
+import NotFound from "./components/NotFound.vue";
+
+
+const router = createRouter({
+    history:createWebHistory(),
+    routes:[
+        {path:"/",name:"index", component:index},
+        {path:"/todos",name:"todos", component:todos},
+        {
+            path:"/:pathMatch(.*)*",
+            name:"not-found",
+            component:NotFound
+        }
+    ]
+})
+
+
+//特性：router
+router.addRoute({
+    path:"/about",
+    name:"about",
+    component:() =>import('./components/about.vue')
+})
+router.addRoute('about',{
+    path:"/about/info",
+    name:"/info",
+    component:{
+        render() {
+            return h('div','info page')
+        }
+    }
+})
 
 createApp(App)
+    .use(router)
     .component("comp",{render: () =>h("div", "i am comp")})
     .directive('highlight',{
         beforeMount(el,binding,vnode){

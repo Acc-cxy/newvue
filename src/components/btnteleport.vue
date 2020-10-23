@@ -1,13 +1,13 @@
 <template>
   <button @click="modalOpen = true">
-    弹出一个全屏模态窗口</button>
+    点击弹出Teleport</button>
 
   <teleport to="body">
     <div v-if="modalOpen" class="modal">
       <div>
         这是一个模态窗口!
         我的父元素是"body"！
-        <button @click="modalOpen = false">Close</button>
+        <button @click="modalOpen = false">关闭</button>
       </div>
     </div>
   </teleport>

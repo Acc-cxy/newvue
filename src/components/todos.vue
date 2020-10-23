@@ -1,5 +1,8 @@
 <template>
   <div class="opens">
+    <!--    回退-->
+    <button @click="BackHome">回到首页</button><br>
+
     <!--  新增todo    -->
     <input
       type="text"
@@ -52,7 +55,8 @@
 </template>
 
 <script>
-import { reactive, toRefs ,computed} from "vue";
+import { reactive, toRefs , computed , watchEffect,watch} from "vue";
+import {useRouter,useRoute,onBeforeRouteLeave} from 'vue-router';
 
 const filters = {
   all(todos){
@@ -66,61 +70,84 @@ const filters = {
   }
 }
 
+const todoStorage = {
+  fetch(){
+    let todos = JSON.parse(localStorage.getItem("vue3-todos") || "[]")
+    todos.forEach((todo,index) => {
+      todo.id = index + 1;
+    })
+    return todos;
+  },
+  save(todos){
+    localStorage.setItem("vue3-todos",JSON.stringify(todos));
+  }
+}
+
 export default {
   setup() {
     const state = reactive({
       newTodo:'',
-      todos: [
-        {
-          id:1,
-          title:'vue3学习'
-        },
-        {
-          id:2,
-          title:'案例测试'
-        },
-        {
-          id:3,
-          title: 'setup方法'
-        }
-      ],
+      todos: todoStorage.fetch(),
       beforeEditCache:'', //缓存前的编辑
       editedTodo:null, //正在编辑的todo
       visibility:'all',
       filterdTodos:computed(() =>{
         return filters[state.visibility](state.todos)
       })
-
     })
 
+    //添加item
     function addTodo(){
       state.todos.push({
         id:state.todos.length+1,
         title: state.newTodo,
-        completed:false
+        completed:true
       })
       state.newTodo='';
     }
-
+    //删除item
     function removeitem(item){
       state.todos.splice(state.todos.indexOf(item),1)
       // state.todos.splice(item,1)
     }
 
+    //输入框显示隐藏
     function editTodo(item){
       state.beforeEditCache = item.title
       state.editedTodo = item
 
     }
-
     function cancelEdit(item){
         item.title = state.beforeEditCache
         state.editedTodo= null
     }
-
     function doneEdit(item){
       state.editedTodo= null
     }
+
+    watchEffect(() =>{
+      todoStorage.save(state.todos)
+    })
+
+    //获取router实例
+    const router = useRouter()
+
+    //route响应式对象，可监控器变化
+    const route = useRoute()
+
+    watch(
+        () => route.query,
+        (query) => {
+          console.log(query)
+        }
+    );
+
+    onBeforeRouteLeave((to,from) =>{
+        const answer = window.confirm('你确认离开吗')
+        if(!answer){
+          return false
+        }
+    })
 
     return{
       ...toRefs(state),
@@ -128,7 +155,10 @@ export default {
       removeitem,
       editTodo,
       cancelEdit,
-      doneEdit
+      doneEdit,
+      BackHome(){
+        router.push('/')
+      }
     }
   },
   directives:{
@@ -186,6 +216,7 @@ export default {
 
   .editing .edit{
     display: block;
+    margin-left: 55px;
   }
 
   p.filters{

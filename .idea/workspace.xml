@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eac07a2a-bc9d-400a-b9a2-a7b8af7215c5" name="默认的" comment="1.15kk">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SeTip.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SeTip.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/btnteleport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/btnteleport.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todos.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -48,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vuejs资料和代码/Dayten/superwu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Acc/v2ue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +64,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="E:\app\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\untitled1\newdemo\src\components\todos" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,8 +90,20 @@
       <workItem from="1603103763706" duration="1352000" />
       <workItem from="1603162573719" duration="10142000" />
       <workItem from="1603180260593" duration="11162000" />
-      <workItem from="1603244229384" duration="2024000" />
+      <workItem from="1603244229384" duration="18213000" />
+      <workItem from="1603333570084" duration="2860000" />
+      <workItem from="1603356649267" duration="631000" />
+      <workItem from="1603360268375" duration="767000" />
+      <workItem from="1603423834560" duration="3095000" />
     </task>
+    <task id="LOCAL-00001" summary="1.15kk">
+      <created>1603247237265</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603247237265</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,32 +134,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603180052099" />
-    <state x="920" y="316" key="FileChooserDialogImpl" timestamp="1603087387159">
+    <state x="920" y="316" key="FileChooserDialogImpl" timestamp="1603361817665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="920" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603087387159" />
-    <state x="641" y="219" key="SettingsEditor" timestamp="1602728201367">
+    <state x="920" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603361817665" />
+    <state x="641" y="219" key="SettingsEditor" timestamp="1603336011304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="641" y="219" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602728201367" />
-    <state x="732" y="308" key="Vcs.Push.Dialog.v2" timestamp="1602728337665">
+    <state x="641" y="219" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603336011304" />
+    <state x="732" y="308" key="Vcs.Push.Dialog.v2" timestamp="1603247325754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="732" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602728337665" />
-    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1603185315390">
+    <state x="732" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603247325754" />
+    <state x="668" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603247457513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603185315390" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/SeTip.vue</url>
-          <line>1</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="668" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603247457513" />
+    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1603260937836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="550" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603260937836" />
   </component>
 </project>

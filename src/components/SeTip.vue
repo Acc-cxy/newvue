@@ -82,7 +82,6 @@ export default {
     }
   },
   setup(){
-    const renyi = Math.random();
     const {counter,computedcounter} = useCounter();
     const msg = ref("some time");
     return {counter,computedcounter,msg,renyi}
